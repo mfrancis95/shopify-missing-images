@@ -1,0 +1,12 @@
+environment:
+  SHOPIFY_ACCESS_TOKEN: ${SHOPIFY_ACCESS_TOKEN}
+  SHOPIFY_HOST: ${SHOPIFY_HOST}
+  SHOPIFY_WEBHOOK_URL: ${SHOPIFY_WEBHOOK_URL}
+packages:
+  - name: shopify-missing-images
+    functions:
+      - name: query
+        runtime: nodejs:18
+        web: false
+      - name: report
+        runtime: nodejs:18
